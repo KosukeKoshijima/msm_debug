@@ -21,7 +21,7 @@ class DirectorsController < ApplicationController
     @director.bio = params[:bio]
     @director.image_url = params[:image_url]
     @director.save
-    render("directors/show_details.html.erb")
+    render("show")
   end
 
   def edit_form
